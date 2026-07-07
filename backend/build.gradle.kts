@@ -44,6 +44,7 @@ dependencies {
     implementation("io.jsonwebtoken:jjwt-api:0.12.6")
     runtimeOnly("io.jsonwebtoken:jjwt-impl:0.12.6")
     runtimeOnly("io.jsonwebtoken:jjwt-jackson:0.12.6")
+    runtimeOnly("com.mysql:mysql-connector-j") // 추가됨
     // oauth2
     implementation("org.springframework.boot:spring-boot-starter-oauth2-client")
 
@@ -51,7 +52,6 @@ dependencies {
 
     implementation("org.springframework.boot:spring-boot-starter-data-redis") // 추가됨
     implementation("org.springframework.session:spring-session-data-redis") // 추가됨
-
 }
 
 tasks.withType<Test> {
