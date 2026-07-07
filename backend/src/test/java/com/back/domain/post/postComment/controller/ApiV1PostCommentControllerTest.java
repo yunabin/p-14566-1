@@ -111,7 +111,7 @@ public class ApiV1PostCommentControllerTest {
         ResultActions resultActions = mvc
                 .perform(
                         delete("/api/v1/posts/%d/comments/%d".formatted(postId, id))
-                        .header("Authorization", "Bearer " + apiKey)
+                                .header("Authorization", "Bearer " + apiKey)
                 )
                 .andDo(print()); // 응답을 출력합니다.
 
@@ -273,7 +273,7 @@ public class ApiV1PostCommentControllerTest {
         resultActions
                 .andExpect(status().isUnauthorized())
                 .andExpect(jsonPath("$.resultCode").value("401-1"))
-                .andExpect(jsonPath("$.msg").value("로그인 후 사용해주세요."));
+                .andExpect(jsonPath("$.msg").value("로그인 후 이용해주세요."));
     }
 
     @Test
