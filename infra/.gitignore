@@ -1,0 +1,28 @@
+# Terraform 상태 파일
+*.tfstate
+*.tfstate.*
+
+# Terraform 변수 파일
+*.tfvars
+*.tfvars.json
+
+# 로컬 Terraform 디렉토리
+**/.terraform/
+
+# 충돌 로그 파일
+crash.log
+crash.*.log
+
+# Terraform 재정의 파일
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Terraform CLI 설정 파일
+.terraformrc
+terraform.rc
+.terraform.lock.hcl
+
+# 변수 파일
+secrets.tf

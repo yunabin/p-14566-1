@@ -1,0 +1,14 @@
+# Terraform 상태/캐시
+**/.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+
+# 민감 정보
+secrets.tf
+application-prod.yml
+.env
+.env.default
+
+# 에디터
+.idea/
